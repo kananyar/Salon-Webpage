@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/log.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="appointment.html">APPOINTMENT</a></li>
+                </ul>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2023</h1>
+    </section>
+    <!--blog page content-->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/cerificate.jpeg">
+                <h2>Our Certificate & Online Programs For 2023</h2>
+                <p>It's not just our expertise but our commitment to creating an unforgettable experience for each client. From the moment you step through our doors, you'll be greeted by a warm and welcoming atmosphere. Our stylists and therapists take the time to understand your preferences, ensuring every service is tailored to your individual needs.</p>
+                <br>
+                <p>We offer a wide range of services, from precision haircuts and stunning color treatments to rejuvenating facials and relaxing spa therapies. Using the latest techniques and high-quality products, we strive to exceed your expectations and leave you looking and feeling your absolute best.</p>
+                <br>
+                <p>At Sass Salon, we understand that beauty is an evolving journey. That's why we stay ahead of the latest trends and innovations in the beauty industry. Whether you're looking for a classic style or a bold, trendsetting look, our team is here to bring your vision to life.</p>
+                <br>
+                <p>We understand that your journey to beauty is ongoing, and we're here to support you every step of the way. Whether you seek a classic look or a bold, trendsetting style, our team is passionate about bringing your vision to life. We take pride in creating an environment where you can express yourself and discover the beauty that defines you.</p>
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Cosmetology</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Hairstyling</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Beauty Care</span>
+                    <span>23</span>
+                </div>
+                <div>
+                    <span>Airbrushing</span>
+                    <span>17</span>
+                </div>
+                <div>
+                    <span>Stage Makeup</span>
+                    <span>15</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    
+    
+    
+    <!--Footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Sass Salon,where beauty meets indulgence! Our passion for enhancing natural beauty drives everything we do.<br> Nestled in the heart of Bangalore, our salon is a haven for those seeking top-notch beauty services in a tranquil and stylish environment.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/?lang=en-in" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p>© Sass salon, Bengaluru, India</p>
+    </section>
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200";
+        }
+    </script>
+</body>
+</html>
